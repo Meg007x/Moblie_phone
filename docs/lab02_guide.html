@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>แนะนำสถานที่ มหาวิทยาลัยขอนแก่น</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: #ffffff;
+            font-family: 'Kanit', sans-serif;
+            font-size: 18px;
+            color: #111;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Kanit', sans-serif;
+        }
+        p, label, textarea, input {
+            font-family: 'Sarabun', serif;
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: 5px solid #e10600;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .header-text h1 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        /* Logo PNG หมุน + กลม */
+        .site-logo {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            background: #000;
+            padding: 5px;
+            animation: spin 4s linear infinite;
+            border: 3px solid white;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Place Card */
+        .place-card {
+            transition: 0.3s;
+            border: 2px solid #000;
+            border-radius: 22px;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+        }
+        .place-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+            border-color: #e10600;
+        }
+
+        .place-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* Form Card */
+        .form-card {
+            border: 2px solid #000;
+            border-radius: 22px;
+            padding: 25px;
+            background: #fafafa;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        input.form-control,
+        textarea.form-control {
+            border: 2px solid #444;
+            font-family: 'Kanit', sans-serif;
+            padding: 10px;
+        }
+
+        button.send-btn {
+            background: #e10600;
+            border: none;
+            padding: 12px 22px;
+            color: white;
+            border-radius: 12px;
+            font-size: 18px;
+            font-family: 'Kanit';
+            transition: 0.3s;
+            width: 100%;           /* เพิ่มตรงนี้ */
+            display: block;        /* เพื่อให้กินบรรทัดเดียว */
+            text-align: center;
+        }
+        button.send-btn:hover {
+            opacity: 0.8;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .site-logo {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-content">
+        <img src="/T-Logo.png" alt="Website Logo" class="site-logo" />
+        <div class="header-text">
+            <h1>Khon Kaen University – Places Guide</h1>
+            <p>วิชา Web Programming | ผู้จัดทำ: นายบวรนันต์ ตะบองทอง | รหัส 663380168-5</p>
+        </div>
+    </div>
+</header>
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">สถานที่ภายในมหาวิทยาลัยขอนแก่น</h2>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-6">
+            <div class="place-card">
+                <h3>บึงสีฐาน</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIgDztgZhlYI8it2OWcQscLg5KisFxhL680g&s" class="place-img mb-3">
+                <img src="https://fa.kku.ac.th/wp-content/uploads/2022/11/636b2646cbadb-1-1024x684.webp" class="place-img mb-3">
+                <p>
+                    บึงสีฐานเป็นสถานที่ออกกำลังกายยอดนิยมของนักศึกษาและประชาชนทั่วไป
+                    มีเลนเดิน วิ่ง ปั่นจักรยานอย่างเป็นระเบียบ พร้อมบรรยากาศริมบึงที่เหมาะแก่การพักผ่อนตลอดทั้งวัน
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6">
+            <div class="place-card">
+                <h3>หอศิลปวัฒนธรรม มข.</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScx1mlRauXiSJ9mOMbVdXBo8KVEM4Swc1fcg&s" class="place-img mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuTpHDOsau5Ui5l1-YnT-0DPdxPOQGbxW1g&s" class="place-img mb-3">
+                <p>
+                    หอศิลปวัฒนธรรมเป็นพื้นที่จัดนิทรรศการศิลปะและกิจกรรมหลากหลายตลอดปี
+                    มีโซนจัดแสดงศิลปะหมุนเวียนและจัดกิจกรรมให้ความรู้เกี่ยวกับวัฒนธรรมอีสาน
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6">
+            <div class="place-card">
+                <h3>ศูนย์พิพิธภัณฑ์และแหล่งเรียนรู้ตลอดชีวิต</h3>
+                <img src="https://i.ytimg.com/vi/Hm1Czs1njhw/maxresdefault.jpg" class="place-img mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQZHbtM8ipElHGa2Wi2GxSoOh_MupwRuTEw&s" class="place-img mb-3">
+                <p>
+                    แหล่งเรียนรู้ด้านประวัติศาสตร์ วัฒนธรรม วิทยาศาสตร์ และสิ่งแวดล้อม
+                    ผ่านสื่อจัดแสดงสมัยใหม่และโซน Interactive เหมาะกับการเรียนรู้นอกห้องเรียน
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6">
+            <div class="place-card">
+                <h3>Sports Complex KKU</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrdqzTWCxxJuTEvTqKqIx5Xrj7HZIhVgaUHg&s" class="place-img mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgtf1-0yaW_t5kp8fNi8kkWoEFQYdwUKNxgw&s" class="place-img mb-3">
+                <p>
+                    ศูนย์กีฬาเอนกประสงค์ รองรับกิจกรรมกีฬา เช่น ฟุตซอล บาสเกตบอล
+                    ว่ายน้ำ ฟิตเนส รวมทั้งเวทีการแข่งขันระดับมหาวิทยาลัย
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Form -->
+    <div class="mt-5">
+        <h2 class="text-center mb-3">แนะนำสถานที่เพิ่มเติม</h2>
+
+        <div class="form-card">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORM_KEY_HERE" />
+
+                <div class="mb-3">
+                    <label>ชื่อสถานที่</label>
+                    <input type="text" name="place_name" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label>รายละเอียด</label>
+                    <textarea name="detail" class="form-control" rows="4" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label>URL ของภาพ</label>
+                    <input type="url" name="image_url" class="form-control" required>
+                </div>
+
+                <button class="send-btn">ส่งข้อมูล</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<footer class="text-center">
+    © 2025 Khon Kaen University
+</footer>
+
+</body>
+</html>
