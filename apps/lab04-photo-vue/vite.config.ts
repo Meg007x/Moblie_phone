@@ -7,7 +7,7 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/Moblie_phone/',  // ชื่อ repo ของคุณบน GitHub
+    base: './',  // ชื่อ repo ของคุณบน GitHub
   plugins: [
     vue(),
     legacy()
