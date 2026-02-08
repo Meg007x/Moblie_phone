@@ -1,0 +1,178 @@
+/* =========================
+   GLOBAL THEME VARIABLES
+========================= */
+:root {
+  /* Primary Theme Colors */
+  --ion-color-primary: #C62828;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-secondary: #d32f2f;
+  --ion-color-secondary-contrast: #ffffff;
+
+  /* Font (รองรับภาษาไทย + ไม่มีหัว) */
+  --ion-font-family: 'Noto Sans Thai', 'Roboto', 'Segoe UI', Arial, sans-serif;
+
+  /* Radius */
+  --ion-border-radius: 12px;
+
+  /* Shadow */
+  --ion-box-shadow: 0 4px 12px rgba(198,40,40,0.25);
+
+  /* Button padding */
+  --ion-padding-vertical: 12px;
+  --ion-padding-horizontal: 16px;
+}
+
+/* =========================
+   BASE FONT (ทั้งแอป)
+========================= */
+html,
+body,
+ion-app,
+ion-page,
+ion-content {
+  font-family: var(--ion-font-family) !important;
+}
+
+/* =========================
+   IONIC INPUT / TEXTAREA / SELECT
+   (แก้ฟอนต์มีหัว + cursor หาย)
+========================= */
+ion-input::part(native),
+ion-textarea::part(native),
+ion-select::part(text),
+ion-label {
+  font-family: var(--ion-font-family) !important;
+  color: #333;
+  caret-color: #C62828;
+}
+
+/* =========================
+   CONTENT BACKGROUND
+========================= */
+ion-content {
+  --background: #F8F8F8;
+  padding: 20px;
+}
+
+/* =========================
+   INPUT / TEXTAREA / SELECT STYLE
+========================= */
+ion-input,
+ion-textarea,
+ion-select {
+  --background: #ffffff;
+  --color: #333;
+  --placeholder-color: #aaa;
+
+  --padding-start: 14px;
+  --padding-end: 14px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+ion-input:focus-within,
+ion-textarea:focus-within,
+ion-select:focus-within {
+  border-color: #C62828;
+  box-shadow: 0 4px 12px rgba(198,40,40,0.25);
+}
+
+/* =========================
+   LABEL
+========================= */
+ion-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* =========================
+   BUTTON
+========================= */
+ion-button {
+  --background: #C62828;
+  --color: #ffffff;
+  --border-radius: 12px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(198,40,40,0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+ion-button:disabled {
+  --background: #e0e0e0;
+  --color: #999;
+  box-shadow: none;
+}
+
+/* =========================
+   TYPE TOGGLE (รายรับ / รายจ่าย)
+========================= */
+.type-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.type-toggle button {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.2s ease-in-out;
+}
+
+.type-toggle button.active {
+  background: #C62828;
+  color: #fff;
+  border-color: #C62828;
+  box-shadow: 0 4px 12px rgba(198,40,40,0.25);
+}
+
+/* =========================
+   FAB BUTTON
+========================= */
+ion-fab-button {
+  --background: #C62828;
+  --color: #ffffff;
+  box-shadow: 0 4px 12px rgba(198,40,40,0.35);
+}
+
+/* =========================
+   ALERT / ACTION SHEET / SELECT
+========================= */
+ion-alert,
+ion-action-sheet,
+ion-select-popover {
+  --color: #333;
+  font-family: var(--ion-font-family);
+}
+
+ion-alert .alert-button,
+ion-action-sheet .action-sheet-button {
+  font-family: var(--ion-font-family);
+}
+
+/* =========================
+   SEGMENT
+========================= */
+ion-segment-button {
+  font-family: var(--ion-font-family);
+}
+
+/* =========================
+   FIX: ปุ่มหาย / ตัวอักษรใส
+========================= */
+ion-alert button,
+ion-action-sheet button {
+  color: #C62828 !important;
+}
